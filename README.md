@@ -4,10 +4,6 @@ This is a working app in which I have implemented all the basic starter screens 
 
 The app uses firebase, and config file has to be fed with api data in order to work with ease. With login, and register functionality, data of users is stored realtime in firebase. All the pages are validated with custom components, and forgot password functions have been implemented which helps user to reset the password using inbuilt firebase functions.
 
-![Landing Page](./screenshots/App_Screen.jpg "Landing Page")
-![Login](./screenshots/Login_Screen.jpg "Login Page")
-![Register](./screenshots/Register_Screen.jpg "Register Page")
-![Forgot Password](./screenshots/Forgot_Password.jpg "Forgot Password Page")
 
 <p float="left">
   <img src="https://github.com/harshchaludia/react-native-firebase-starter/blob/master/screenshots/App_Screen.jpg" width="100" />
