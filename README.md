@@ -13,7 +13,7 @@ The app uses firebase, and config file has to be fed with api data in order to w
 
 </p>
 
-### IMPLEMENTATION
+## IMPLEMENTATION
 In the root directory
 * Install dependencies: `npm install`
 * Start the project: `npm start --reset-cache`
@@ -25,8 +25,8 @@ In the root directory
 * Generate APK & IPA: `expo build:status`
 
 
-## FIREBASE
-Alt-H2
+## FIREBASE 
+
 
 In the `master/src/core/config.js` directory,
 
