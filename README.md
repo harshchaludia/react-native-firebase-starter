@@ -13,27 +13,34 @@ The app uses firebase, and config file has to be fed with api data in order to w
 
 </p>
 
-### Implementation
+### IMPLEMENTATION
 In the root directory
 * Install dependencies: `npm install`
+* Start the project: `npm start --reset-cache`
+* expo flexibility: `expo start`
+* Build Android apk: `expo build:android -t apk`
+* Build Android bundle: `expo build:android -t app-bundle`
+* Build IOS archive: `expo build:ios -t archive`
+* Build IOS simulator: `expo build:ios -t simulator` 
+* Generate APK & IPA: `expo build:status`
 
 
+### FIREBASE CONFIG FILE
 
-### Android
+In the `master/src/core/config.js` directory,
 
-* You might need to do this to run it in Android Studio or on real device: `adb reverse tcp:8081 tcp:8081`
-* And for the sample server: `adb reverse tcp:3000 tcp:3000`
-* To run from command line try: `react-native run-android`
+#Replace "" with your own firebase config!
 
-### Server
-
-There is a server that the app hits for data. The data is only stored in memory, but it should produce a more realistic environment.
-
-In the `server` directory
-
-* Install nvm and node-4.2.3
-* Install dependencies: `npm install`
-* Run it: `npm start`
+``export const FIREBASE_CONFIG = {
+apiKey: "",
+authDomain: "",
+databaseURL: "",
+projectId: "",
+storageBucket: "",
+messagingSenderId: "",
+appId: "",
+measurementId: ""
+};``
 
 It has sample data in the `models.js` file. For example, there is a user bleonard (password: "sample") that you can log in as.
 
