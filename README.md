@@ -25,7 +25,7 @@ In the root directory
 * Generate APK & IPA: `expo build:status`
 
 
-### FIREBASE
+## FIREBASE
 
 In the `master/src/core/config.js` directory,
 
@@ -42,7 +42,7 @@ appId: "",
 measurementId: ""
 };``
 
-### PACKAGES 
+## PACKAGES 
 
 | Package Name | Version |
 | ------ | ------ |
@@ -70,11 +70,11 @@ measurementId: ""
 |redux|^4.0.5|
 
 
-### AUTHENTICATION
+## AUTHENTICATION
 
 Firebase Authentication modules are used.
 
-#### COMPONENTS
+## COMPONENTS
 
 Some shared components that might be helpful
 
