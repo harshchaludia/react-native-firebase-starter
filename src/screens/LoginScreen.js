@@ -75,11 +75,11 @@ const LoginScreen = ({ navigation }) => {
         autoCapitalize="none"
       />
 
-      <View style={styles.forgotPassword}>
+      <View style={styles.forgotPasswordStyle}>
         <TouchableOpacity
           onPress={() => navigation.navigate("ForgotPasswordScreen")}
         >
-          <Text style={styles.label}>Forgot your password?</Text>
+          <Text style={styles.labelStyle}>Forgot your password?</Text>
         </TouchableOpacity>
       </View>
 
@@ -87,7 +87,7 @@ const LoginScreen = ({ navigation }) => {
         Login
       </Button>
 
-      <View style={styles.row}>
+      <View style={styles.rowStyle}>
 
           <Button mode="contained" onPress={() => navigation.navigate("RegisterScreen")}>
         REGISTER
@@ -100,22 +100,18 @@ const LoginScreen = ({ navigation }) => {
 };
 
 const styles = StyleSheet.create({
-  forgotPassword: {
+  forgotPasswordStyle: {
     width: "100%",
     alignItems: "flex-start",
     marginBottom: 24
   },
-  row: {
+  rowStyle: {
     flexDirection: "row",
     marginTop: 4
   },
-  label: {
+  labelStyle: {
     color: themeColors.colors.secondary
   },
-  link: {
-    fontWeight: "bold",
-    color: themeColors.colors.primary
-  }
 });
 
 export default memo(LoginScreen);

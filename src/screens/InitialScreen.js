@@ -9,7 +9,7 @@ import { FIREBASE_CONFIG } from "../core/config";
 // Initialize Firebase
 firebase.initializeApp(FIREBASE_CONFIG);
 
-const AuthLoadingScreen = ({ navigation }) => {
+const InitialScreen = ({ navigation }) => {
   firebase.auth().onAuthStateChanged(user => {
     if (user) {
       // User is logged in
@@ -27,4 +27,4 @@ const AuthLoadingScreen = ({ navigation }) => {
   );
 };
 
-export default memo(AuthLoadingScreen);
+export default memo(InitialScreen);

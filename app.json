@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Firebase Login Template",
-    "slug": "firebase-login-template",
+    "name": "Template by Harsh Chaludia",
+    "slug": "react-native-starter-template",
     "privacy": "public",
     "sdkVersion": "37.0.0",
     "platforms": [

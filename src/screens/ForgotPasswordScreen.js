@@ -67,7 +67,7 @@ const ForgotPasswordScreen = ({ navigation }) => {
         loading={loading}
         mode="contained"
         onPress={_onSendPressed}
-        style={styles.button}
+        style={styles.buttonStyle}
       >
         Send Reset Instructions
       </Button>
@@ -75,7 +75,7 @@ const ForgotPasswordScreen = ({ navigation }) => {
         loading={loading}
         mode="contained"
         onPress={() => navigation.navigate("LoginScreen")}
-        style={styles.button}
+        style={styles.buttonStyle}
       >
  Back to login      </Button>
       
@@ -89,17 +89,11 @@ const ForgotPasswordScreen = ({ navigation }) => {
 };
 
 const styles = StyleSheet.create({
-  back: {
-    width: "100%",
+  
+  buttonStyle: {
     marginTop: 12
   },
-  button: {
-    marginTop: 12
-  },
-  label: {
-    color: themeColors.colors.secondary,
-    width: "100%"
-  }
+  
 });
 
 export default memo(ForgotPasswordScreen);

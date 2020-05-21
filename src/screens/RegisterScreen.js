@@ -96,13 +96,13 @@ const RegisterScreen = ({ navigation }) => {
         loading={loading}
         mode="contained"
         onPress={_onSignUpPressed}
-        style={styles.button}
+        style={styles.buttonStyle}
       >
         Sign Up
       </Button>
       <Button
         mode="contained"
-        onPress={() => navigation.navigate("LoginScreen")}        style={styles.button}
+        onPress={() => navigation.navigate("LoginScreen")}        style={styles.buttonStyle}
       >
         I ALREADY HAVE AN ACCOUNT
       </Button>
@@ -113,20 +113,11 @@ const RegisterScreen = ({ navigation }) => {
 };
 
 const styles = StyleSheet.create({
-  label: {
-    color: themeColors.colors.secondary
-  },
-  button: {
+ 
+  buttonStyle: {
     marginTop: 24
   },
-  row: {
-    flexDirection: "row",
-    marginTop: 4
-  },
-  link: {
-    fontWeight: "bold",
-    color: themeColors.colors.primary
-  }
+  
 });
 
 export default memo(RegisterScreen);
