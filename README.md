@@ -29,7 +29,7 @@ In the root directory
 
 In the `master/src/core/config.js` directory,
 
-#Replace "" with your own firebase config!
+Replace "" with your own firebase config!
 
 ``export const FIREBASE_CONFIG = {
 apiKey: "",
@@ -42,86 +42,50 @@ appId: "",
 measurementId: ""
 };``
 
-It has sample data in the `models.js` file. For example, there is a user bleonard (password: "sample") that you can log in as.
+### PACKAGES 
 
-### Tests
+| Package Name | Version |
+| ------ | ------ |
+|@react-native-community/masked-view|0.1.6|
+|expo|^37.0.0|
+|firebase|7.9.0|
+|react|16.9.0|
+|react-dom|16.9.0|
+|react-native|https://github.com/expo/react-native/archive/sdk-37.0.1.tar.gz|
+|react-native-elements|^2.0.0|
+|react-native-gesture-handler|~1.6.0|
+|react-native-material-cards|^1.0.15|
+|react-native-paper|^3.0.0|
+|react-native-reanimated|~1.7.0|
+|react-native-safe-area-context|0.7.3|
+|react-native-screens|~2.2.0|
+|react-native-status-bar-height|^2.4.0|
+|react-native-vector-icons|^6.6.0|
+|react-native-web|^0.11.7|
+|react-native-wizard|^2.0.0|
+|react-navigation|^4.0.10|
+|react-navigation-drawer|^2.4.13|
+|react-navigation-stack|^2.5.0|
+|react-redux|^7.2.0|
+|redux|^4.0.5|
 
-The integration tests are run using [Appium](http://appium.io/).
 
-There is also an [example](https://github.com/taskrabbit/ReactNativeSampleApp/blob/master/.travis.yml) of how to run it on Travis CI: [![Build Status](https://travis-ci.org/taskrabbit/ReactNativeSampleApp.svg?branch=master)](https://travis-ci.org/taskrabbit/ReactNativeSampleApp)
+### AUTHENTICATION
 
-To run tests:
+Firebase Authentication modules are used.
 
-* Make sure you have the 9.0 simulators installed in XCode
-* Compile app for the test environment: `npm run compile:test`
-* Launch simulator and tests: `npm test`
-
-### Compiling
-
-You can compile and put it on the phone with: `npm run install:staging`
-
-Not that there's a staging server at this point, but it's an example of how to compile things via the command line.
-
-### Android
-
-We'll get there, but we're still working on the iOS version.
-
-# Current Concepts
-
-### Navigation
-
-The sole method of navigation (what's showing on the screen and where the back button goes) is via urls. We parse urls to determine the route stack. There is some stuff to make "related" url navigation look "right" (push and pop). Making everything addressable by URL is great for deep linking and forces each screen to be able to load all on it's own from simple data.
-
-The Router handles parsing different routes depending if you are logged in or not. The urls must be able to represent the entire navigation stack, so that means they can be recursive like my friend's friend's friend's feed (sample://dashboard/follows/john/follows/sarah/follows/amy/posts).
-
-#### Flux
-
-The Components use Actions. Actions tend to use the API Services and dispatch an event. The Stores are listening to the events. The Components add and remove listeners to the Stores.
-
-#### Environment
-
-There is a model called Environment that gets bootstrapped from Objective-C. It knows things that are different per environment like what API server to talk to.
-
-#### Data storage
-
-Info is currently stored as json to the local file system.
-
-#### Shared CSS
-
-It uses the `cssVar` pattern from the sample Facebook apps.
-
-#### API
-
-It uses superagent to do HTTP requests and sets headers and other things like that.
-
-#### Components
+#### COMPONENTS
 
 Some shared components that might be helpful
 
-* SegmentedControl: Non-iOS specific version of that control
-* SimpleList: make a list out of the props set
-* Button: Helper to make them all similiar
-
-#### Mixins
-
-We are currently sharing code through mixins. Some of them might be generally useful.
-
-* KeyboardListener: helps know the amount of space the keyboard is taking up
-* DispatcherListener: subscribes and ubsubscribes from the Dispatcher for a component
-* NavigationListener: react to navigation changes in a component
-
-#### Extensions
-
-We've been trying out ways to not use mixins. `AddSpinnerLoader` is an example of a higher-level component.
-
-#### i18n
-
-We've internationalized our app. Each component definies it's own keys.
-This provides a sample of how that works.
-
-#### Android too
-
-We shipped our Android app! We need to update this to work there too.
+* BackButton.js - A button navigating previous screen
+* Background.js - Attach any background you want to any screen.
+* Button.js - A button with styling
+* Header.js - A header component
+* Logo.js - Renders the log of the app
+* Paragraph.js - Wraps with text styling
+* TextInput.js - Input elements
+* Toast.js - A notification message with error being shown.
 
 
 ## License
