@@ -26,6 +26,7 @@ In the root directory
 
 
 ## FIREBASE
+Alt-H2
 
 In the `master/src/core/config.js` directory,
 
