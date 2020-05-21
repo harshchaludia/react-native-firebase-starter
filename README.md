@@ -9,6 +9,14 @@ The app uses firebase, and config file has to be fed with api data in order to w
 ![Register](./screenshots/Register_Screen.jpg "Register Page")
 ![Forgot Password](./screenshots/Forgot_Password.jpg "Forgot Password Page")
 
+<p float="left">
+  <img src="https://github.com/harshchaludia/react-native-firebase-starter/blob/master/screenshots/App_Screen.jpg" width="100" />
+  <img src="https://github.com/harshchaludia/react-native-firebase-starter/blob/master/screenshots/Login_Screen.jpg" width="100" /> 
+  <img src="https://github.com/harshchaludia/react-native-firebase-starter/blob/master/screenshots/Register_Screen.jpg" width="100" />
+  <img src="https://github.com/harshchaludia/react-native-firebase-starter/blob/master/screenshots/https://github.com/harshchaludia/react-native-firebase-starter/blob/master/screenshots/Forgot_Password.jpg" width="100" />
+
+</p>
+
 ### Implementation
 In the root directory
 * Install dependencies: `npm install`
