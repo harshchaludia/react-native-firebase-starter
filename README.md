@@ -77,7 +77,7 @@ Some shared components that might be helpful
 * Background.js - Attach any background you want to any screen.
 * Button.js - A button with styling
 * Header.js - A header component
-* Logo.js - Renders the log of the app
+* Logo.js - Renders the logo of the app
 * Paragraph.js - Wraps with text styling
 * TextInput.js - Input elements
 * Toast.js - A notification message with error being shown.
