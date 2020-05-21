@@ -25,7 +25,7 @@ In the root directory
 * Generate APK & IPA: `expo build:status`
 
 
-### FIREBASE CONFIG FILE
+### FIREBASE
 
 In the `master/src/core/config.js` directory,
 
