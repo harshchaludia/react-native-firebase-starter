@@ -18,7 +18,7 @@
     "react-native-gesture-handler": "~1.6.0",
     "react-native-material-cards": "^1.0.15",
     "react-native-paper": "^3.0.0",
-    "react-native-reanimated": "~1.7.0",
+    "react-native-reanimated": "~2.10.0",
     "react-native-safe-area-context": "0.7.3",
     "react-native-screens": "~2.2.0",
     "react-native-status-bar-height": "^2.4.0",
